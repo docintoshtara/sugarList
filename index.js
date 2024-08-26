@@ -12,6 +12,7 @@ app.use(express.urlencoded({
 app.use(express.json());
 
 app.use('/api/v1', suger);
+app.use('/api/v1', user);
 app.listen(PORT, () => {
     console.log(`connected on ${PORT}`);
 });
